@@ -8,27 +8,27 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 class TestPostCOntroller extends TestCase
 {
-    protected $first;
-    protected $second, $post;
-    public function setUp()
-    {
-        Parent::setUp();
-        $this->artisan('migrate:refresh');
-         $this->seed();
-        $this->first = factory(\App\Post::class)->create([
-            'title'=>'This is title',
-            'content'=>'BLa Vla'
-        ]);
-        $this->second = factory(\App\Post::class)->create([
-            'created_at'=>\Carbon\Carbon::now()->subMonth(),
-            'title'=>'This is title 2',
-            'content'=>'Post Second Content'
-        ]);
-        $this->post = factory(\App\Post::class)->make([
-            'title'=>'Test Ttile',
-            'content'=>'Test COntent'
-        ]);
-    }
+    // protected $first;
+    // protected $second, $post;
+    // public function setUp()
+    // {
+    //     Parent::setUp();
+    //     $this->artisan('migrate:refresh');
+    //      $this->seed();
+    //     $this->first = factory(\App\Post::class)->create([
+    //         'title'=>'This is title',
+    //         'content'=>'BLa Vla'
+    //     ]);
+    //     $this->second = factory(\App\Post::class)->create([
+    //         'created_at'=>\Carbon\Carbon::now()->subMonth(),
+    //         'title'=>'This is title 2',
+    //         'content'=>'Post Second Content'
+    //     ]);
+    //     $this->post = factory(\App\Post::class)->make([
+    //         'title'=>'Test Ttile',
+    //         'content'=>'Test COntent'
+    //     ]);
+    // }
 
     /**
      * A basic test example.

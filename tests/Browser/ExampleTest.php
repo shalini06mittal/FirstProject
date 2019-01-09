@@ -30,15 +30,15 @@ class ExampleTest extends DuskTestCase
         //             ->press('Login')
         //             ->assertPathIs('/home');
         // });
-        $this->browse(function ($browser) {
-            $browser->visit('/register')
-                    ->assertSee('Register')
-                    ->type('name', 'abcde')
-                    ->type('email', 'abcde1@gmail.com')
-                    ->type('password', 'abcde1234')
-                    ->type('password_confirmation', 'abcde1234')
-                    ->press('Register')
-                    ->assertPathIs('/home');
-        });
+        // $this->browse(function ($browser) {
+        //     $browser->visit('/register')
+        //             ->assertSee('Register')
+        //             ->type('name', 'abcde')
+        //             ->type('email', 'abcde1@gmail.com')
+        //             ->type('password', 'abcde1234')
+        //             ->type('password_confirmation', 'abcde1234')
+        //             ->press('Register')
+        //             ->assertPathIs('/home');
+        // });
     }
 }
