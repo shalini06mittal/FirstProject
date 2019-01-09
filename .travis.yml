@@ -10,3 +10,4 @@ php:
 
 script:
  - vendor/bin/phpunit
+ 
